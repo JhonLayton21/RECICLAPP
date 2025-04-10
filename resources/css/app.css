@@ -23,6 +23,12 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
+    --color-primary: #55A72E;
+    --color-secondary: #EFEFEF;
+    --color-lime: #60ce09;
+    --color-lightGreen: #C8E1AE;
+    --color-black: #434343;
+
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
@@ -64,3 +70,23 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+.bg-primary{
+    background-color: var(--color-primary);
+}
+
+.bg-secondary{
+    background-color: var(--color-secondary);
+}
+
+.bg-lime{
+    background-color: var(--color-lime);
+}
+
+.bg-lightGreen{
+    background-color: var(--color-lightGreen);
+}
+
+.bg-black{
+    background-color: var(--color-black);
+}
