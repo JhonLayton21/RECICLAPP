@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use App\Models\SolicitudRecoleccion;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,6 +18,18 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
     Volt::route('settings/password', 'settings.password')->name('settings.password');
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
+
+    Route::get('/solicitud-recoleccion', function () {
+        return view('solicitud-recoleccion');
+    })->name('solicitud.recoleccion');  
+    
+    Route::get('/informes', function () {
+        return view('informes');
+    })->name('informes'); 
+
+    Route::get('/ver-solicitudes', function () {
+        return SolicitudRecoleccion::all();
+    });
 });
 
 require __DIR__.'/auth.php';
