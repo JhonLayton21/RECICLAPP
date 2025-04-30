@@ -1,4 +1,4 @@
-<div class="max-w-4xl mx-auto p-6 bg-white dark:bg-zinc-800 shadow-2xl rounded-2xl text-gray-900 dark:text-gray-100">
+<div class="max-w-4xl mx-auto p-6 bg-white dark:bg-zinc-800 shadow-2xl shadow-lime-500/50! rounded-2xl text-gray-900 dark:text-gray-100">
     @if (session()->has('success'))
         <div class="mb-4 p-3 bg-green-100 dark:bg-green-200 text-green-700 dark:text-green-900 rounded">
             {{ session('success') }}

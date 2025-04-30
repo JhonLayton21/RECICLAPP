@@ -1,4 +1,4 @@
-<div class="p-6 bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl">
+<div class="p-6 bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl shadow-lime-500/50!">
     <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Informe de Solicitudes de Recolección</h2>
 
     <div class="overflow-x-auto">
